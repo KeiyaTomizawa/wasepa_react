@@ -19,5 +19,8 @@
     "react-dom": "^15.1.0",
     "react-tap-event-plugin": "^1.0.0",
     "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "react-router": "^4.0.0"
   }
 }

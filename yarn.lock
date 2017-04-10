@@ -1354,7 +1354,7 @@ loose-envify@^1.0.0, loose-envify@^1.1.0:
   dependencies:
     js-tokens "^3.0.0"
 
-material-ui@^0.15.0:
+material-ui@^0.15.4:
   version "0.15.4"
   resolved "https://registry.yarnpkg.com/material-ui/-/material-ui-0.15.4.tgz#c66b210884f1584108526c498b2c462aee4c3dbb"
   dependencies:
