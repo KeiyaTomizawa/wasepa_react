@@ -1,5 +1,6 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const styles = {
   headline: {

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const styles = {
   headline: {
@@ -13,24 +14,47 @@ const styles = {
 
 const TabsExampleSimple = () => (
   <Tabs>
-    <Tab label="Mypage" >
+    <Tab label="Mypage" value="0">
       <div>
-        <h2>Mypage</h2>
+        <ul>
+          <li>
+            <Link to="/">
+              Mypage
+            </Link>
+          </li>
+          <li>
+            <Link to="/add">
+              Add
+            </Link>
+          </li>
+        </ul>
       </div>
     </Tab>
-    <Tab label="Chart" >
+    <Tab label="Chart" value="1">
       <div>
-        <h2>Chart</h2>
+        <li>
+          <Link to="/chart">
+            Chart
+          </Link>
+        </li>
       </div>
     </Tab>
-    <Tab label="RecordingTime" >
+    <Tab label="RecordingTime" value="2">
       <div>
-        <h2 style={styles.headline}>RecordingTime</h2>
+        <li>
+          <Link to="/recording_time">
+            RecordingTime
+          </Link>
+        </li>
       </div>
     </Tab>
-    <Tab label="Ranking" >
+    <Tab label="Ranking" value="3">
       <div>
-        <h2 style={styles.headline}>Ranking</h2>
+        <li>
+          <Link to="/ranking">
+            Ranking
+          </Link>
+        </li>
       </div>
     </Tab>
   </Tabs>

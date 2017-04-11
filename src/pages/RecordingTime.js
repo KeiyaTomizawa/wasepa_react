@@ -1,22 +1,26 @@
 import React from 'react';
-//import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Avatar from 'material-ui/Avatar';
 import SimpleCheckbox from '../components/Checkbox';
 import SimpleRadioButton from '../components/RadioButton';
 import SimpleTextField from '../components/Text';
+//import AutoCompleteExampleSimple from '../components/AutoComplete';
 
-const AddInfo = () => (
+const RecordingTimeInfo = () => (
   <MuiThemeProvider>
     <div>
-      <h1>個人情報入力</h1>
-      <Avatar src="src/images/ktomi.JPG" />
+      <h1>記録入力フォーム</h1>
+      <h3>名前</h3>
       <SimpleTextField />
+      <h3>記録タイム</h3>
+      <h3>コース距離</h3>
       <SimpleRadioButton />
-      <SimpleCheckbox />
+      <h3>ボードの種類</h3>
+      <SimpleRadioButton />
+      <h3>天気情報</h3>
     </div>
   </MuiThemeProvider>
 );
 
 
-export default AddInfo;
+export default RecordingTimeInfo;
